@@ -31,6 +31,13 @@ Temizlene datayı  **{key: "çalıştır", val: 2, score: 16}** bu şekilde obje
 #### 1.2.3.“rootFrekans.js” Dosyası
 Hazırlanan objeyi FrontEnd isteklerine cevap olarak gönderen “rootFrekans.js” dosyamızın içeriği aşağıdaki gibidir. Bu sayfada “fetchData” fonksiyonunu çağırdık ve bu fonksiyon içerisinde de “editData” fonksiyonunu çağırdık. “fetchData” ve “editData” fonksiyonlarının işlevlerini yukarda anlatmıştım. FrontEnd’den Rest Api çağrısı ile gönderilen “Url” bilgisi “Post” metodu ile alınıyor, “fetchData” fonksiyonuna bu “url” bilgisi verilerek dönen data FrontEnd’te karşılanıp üstte anlatıldığı şekilde sayfa da kullanılıyor.
 
+## 2.SAYFADA GEÇEN KELİMELERDEN ANAHTAR KELİME ÇIKARMA
+Bu bölümde ise belirleyeceğimiz kriterler doğrultusunda sayfadan anahtar kelime çıkarma işlemi olacaktır.
+
+### 2.1.FrontEnd Bölümü
+Aşağıdaki sayfa tasarımı yapılarak inputtan çekilen Url aynen frekans hesaplama kısmındaki gibi Rest Api ile Backend’e gönderiliyor. Geri dönen data ise bu sayfada tablo içerisinde listeleniyor. Bu bölümde frekanstan farklı olarak birde **“score”** değerini görmekteyiz. Her kelimenin kelimeye özel sayfa içi score değerlendirmesi yapılmıştır.
+
+![img-2](https://user-images.githubusercontent.com/48925129/116059992-1f8d8c80-a68a-11eb-9362-5617518e123a.png)
 
 
 
