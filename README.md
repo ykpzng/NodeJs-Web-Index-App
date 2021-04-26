@@ -54,7 +54,7 @@ Aşağıdaki sayfa tasarımı yapılarak inputtan çekilen Url aynen frekans hes
 #### 2.2.1.Anahtar Kelime Bulma Yöntemi
 
 Bilindiği üzere bir web sayfasında kullanılan etiketlerin önem sıraları vardır ve bu etiketler içerisinde kullanılan metinler etiketten kaynaklı derecelere haiz olur.
-Örnek vermek gerekirse <h1> etiketi ana başlıkları oluşturur, ana başlıklar da bir sayfa için önemli olan kelimeleri içerir. Aynı zamanda SEO çalışmalarında da bu etiketin yeri ayrıdır. Yine <title> etiketi bir sayfayı tanımlayan en önemli kelimeleri içerir. 
+Örnek vermek gerekirse **h1** etiketi ana başlıkları oluşturur, ana başlıklar da bir sayfa için önemli olan kelimeleri içerir. Aynı zamanda SEO çalışmalarında da bu etiketin yeri ayrıdır. Yine <title> etiketi bir sayfayı tanımlayan en önemli kelimeleri içerir. 
 Biz de bu düşünceden yola çıkarak “fetchData” fonksiyonunda görüldüğü gibi metin taşıyan etiketlere 1-10 arasında rakam değerleri verdik. Sonrasında kelime hangi etiketten çıktı ise etiketin score değeri ile bu etiketten çıkan kelime sayını çarptık ve kelimenin scorunu oluşturduk. 
 Bu şekilde tüm etiketlerden gelen kelimeler ayrı ayrı score değerleriyle listelenmiş oldu. 
 Aynı kelime farklı etiketlerde de geçme ihtimali olduğu için sonrasında bir işlem daha yaparak aynı kelimelerin score değerlerini topladık ve bu kelime grubunu en yüksek scordan küçüğüne doğru sıraladık. Sonuş olarak elimizde aşağıdaki gibi bir anahtar kelime objesi oluşmuş oldu. 
