@@ -19,6 +19,18 @@ Bu bölümde webden veri kazıma işlemi ve kazınan verinin düzenlenmesi için
 Web den veri kazımak için **Puppeteer** kütüphanesini kullandık. Araştırmalarımız neticesinde NodeJs de web den veri çekmek için bir kaç yöntem olduğunu gördük. Bunları **Request, Cheerio ve Puppeteer** olarak listeleyebiliriz. 
 Puppeteer kütüphanesini özellikle seçmemizin sebebi; günümüz web sitelerinin bazı kısımları javascript ile oluşturulan dinamik html etiketleri içermektedir. Birçok web kazıma yönteminin bu etiketleri okuyamadığını gördük. **Puppeteer** ise bu etiketlerin içeriğini de çok rahat okuyor olması tercih sebebimiz olmuştur.
 
-#### 1.2.1.“fetchData” Fonksitonu
+#### 1.2.1.“fetchData” Fonksiyonu
 “fetchData” ismiyle oluşturduğumuz bu fonksiyonu bütün data çekme işlemlerinde kullanacağız. Bu fonksiyonda her etiket için ayrı bir score değeri verildik. Bu kısım Anahtar kelime kısmında detaylı anlatılacaktır.
 “fetchData” fonksiyonunu Promise ile yazdık çünkü veri çekme işlemleri bir zaman aşımı oluşturacağı için javascriptte bu asenkronize işlemi aşmanın yolu Promise kullanılarak çözülüyor.
+
+#### 1.2.2.“editData” Fonksiyonu
+“fetchData” fonksiyonu ile webden çekilen ham veriyi işlediğimiz “editData” fonksiyonu oluşturduk. Bu fonksiyon ile bize gelen veriyi kelimelere ayırdık ve gelen data içerisindeki birçok fazlalık simgeleri temizledik. 
+Temizlene datayı  **{key: "çalıştır", val: 2, score: 16}** bu şekilde object içerisinde depolayarak ön yüzden gelen isteklere gönderilmek üzere hazır hale getirdik.
+“stopWordClear” fonksiyonunu bu sayfada kullanarak anahtar kelime seçimlerinde ilgisiz kelimelerin listeden atılmasını sağladık. Bu fonksiyonun kodları uzun olduğu için rapora eklemedik.
+
+#### 1.2.3.“rootFrekans.js” Dosyası
+Hazırlanan objeyi FrontEnd isteklerine cevap olarak gönderen “rootFrekans.js” dosyamızın içeriği aşağıdaki gibidir. Bu sayfada “fetchData” fonksiyonunu çağırdık ve bu fonksiyon içerisinde de “editData” fonksiyonunu çağırdık. “fetchData” ve “editData” fonksiyonlarının işlevlerini yukarda anlatmıştım. FrontEnd’den Rest Api çağrısı ile gönderilen “Url” bilgisi “Post” metodu ile alınıyor, “fetchData” fonksiyonuna bu “url” bilgisi verilerek dönen data FrontEnd’te karşılanıp üstte anlatıldığı şekilde sayfa da kullanılıyor.
+
+
+
+
