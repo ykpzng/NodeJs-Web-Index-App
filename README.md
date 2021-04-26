@@ -9,9 +9,6 @@ Bu bölüm de istenen ön yüzden girilen bir Url adresi içeriğindeki kelimele
 Uygulamanın ön yüzünde kullanıcının Url adresi girmesi için bir input ve girilen url e ait bilgileri getirecek “Veri Çek” isimli buton ekledik.
 Butona tıkladıktan sonra aşağıda görüldüğü gibi sayfadaki kelimeler ve sayfada kaç adet bulunduğu listelenmektedir. Bu kısımda tüm kelimeler hiç bir ayrım gözetmeden listeleniyor ve sayfada kaç tür kelime olduğunuda tablonun başındaki (448) rakamıyla görebiliyoruz.
 
+![img-1](https://user-images.githubusercontent.com/48925129/116057606-a3924500-a687-11eb-8103-f865e951e362.png)
 
 
-
-<img src="img/img-1.png" width=""100">
-
-![alt large]()
