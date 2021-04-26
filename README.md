@@ -87,7 +87,7 @@ Bu sayfadan Rest api ile Url grubu BackEnd den istekte bulunuyor. Dönen istek s
 Ekran görüntüsünden sonuçlara bakıldığında gayet gerçeğe yakın sonuçlar olduğu görülmektedir
 
 
-![img-4](https://user-images.githubusercontent.com/48925129/116060758-d427ae00-a68a-11eb-9c48-a9f7e4a960b6.png)
+![img-4](https://user-images.githubusercontent.com/48925129/116065578-d50f0e80-a68f-11eb-87fc-83240894f65b.png)
 
 
 ## 5.SEMANTİK ANALİZ
