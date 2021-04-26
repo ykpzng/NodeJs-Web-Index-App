@@ -19,3 +19,6 @@ Bu bölümde webden veri kazıma işlemi ve kazınan verinin düzenlenmesi için
 Web den veri kazımak için **Puppeteer** kütüphanesini kullandık. Araştırmalarımız neticesinde NodeJs de web den veri çekmek için bir kaç yöntem olduğunu gördük. Bunları **Request, Cheerio ve Puppeteer** olarak listeleyebiliriz. 
 Puppeteer kütüphanesini özellikle seçmemizin sebebi; günümüz web sitelerinin bazı kısımları javascript ile oluşturulan dinamik html etiketleri içermektedir. Birçok web kazıma yönteminin bu etiketleri okuyamadığını gördük. **Puppeteer** ise bu etiketlerin içeriğini de çok rahat okuyor olması tercih sebebimiz olmuştur.
 
+#### 1.2.1.“fetchData” Fonksitonu
+“fetchData” ismiyle oluşturduğumuz bu fonksiyonu bütün data çekme işlemlerinde kullanacağız. Bu fonksiyonda her etiket için ayrı bir score değeri verildik. Bu kısım Anahtar kelime kısmında detaylı anlatılacaktır.
+“fetchData” fonksiyonunu Promise ile yazdık çünkü veri çekme işlemleri bir zaman aşımı oluşturacağı için javascriptte bu asenkronize işlemi aşmanın yolu Promise kullanılarak çözülüyor.
